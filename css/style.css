@@ -52,6 +52,11 @@ header {
   color: #fff
 }
 
+.menu ul li a:hover{
+  color: #888;
+  transition: 1s;
+}
+
 /* end header here */
 
 .section-1 .background {
@@ -271,6 +276,7 @@ header {
   margin: auto;
   white-space: unset;
   font-size: 20px;
+  color: #888;
 }
 
 .projects .project img {
@@ -319,9 +325,20 @@ header {
 }
 
 @media screen and (max-width: 872px) {
+
+  header{
+    padding-bottom: 10px;
+  }
   .menu {
     width: 100%;
     display: none;
+  }
+
+  .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom:1px solid #888; 
   }
 
   .logo {
@@ -339,7 +356,9 @@ header {
 
   .active {
     display: block;
+    transition: 1s;
   }
+
 }
 
 @media screen and (max-width:802px){
@@ -355,6 +374,7 @@ header {
     max-width: 250px;
     max-height: 250px;
   }
+
 }
 
 @media screen and (max-width: 460px) {
@@ -367,7 +387,7 @@ header {
   }
 
 
-  @media screen and (max-width:400px){ 
+  @media screen and (max-width:405px){ 
    
 .logo{
   font-size:12px;

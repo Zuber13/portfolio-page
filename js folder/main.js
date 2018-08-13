@@ -13,6 +13,10 @@ $(document).ready(function () {
             "swing"
         );
     });
+
+    $("#menu-bar").on("click", function () {
+        $('.menu').toggleClass('active');
+    })
 });
 
 
