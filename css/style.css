@@ -327,10 +327,6 @@ header {
 
 @media screen and (max-width: 872px) {
 
-  body{
-    overflow: hidden;
-  }s
-
   header{
     width: 100%;
     padding-bottom: 10px;
