@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
 var i = 0;
-var text = "Front-end developer, Codenewibe, Free Code Camper, Wanna be full stack developer";
+var text = "Front-end developer, CodeNewbie, Free Code Camper, Wanna be full stack developer";
 
 function typeWriter() {
     if (i < text.length) {

@@ -11,24 +11,29 @@ body {
 
 .header {
   width: 100%;
-  background: #247ba0;
+  background: #247BA0;
+  color: #f3f7fb7a;
+  line-height: 10px;
+
 }
 
-header {
-  width: 80%;
+.header header {
+  width: 65%;
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
 .logo {
-  width: 25%;
+  width: 39%;
   display: inline-block;
-  color: #fff;
-  font-size:15px;
+  font-size: 18px;
+  font: 900;
 }
 
 .menu {
-  width: 70%;
+  width: 60%;
   display: inline-block;
+  font-size: 16px;
 }
 
 .hamburgur {
@@ -45,25 +50,25 @@ header {
 
 .menu ul li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 13px;
 }
 
 .menu ul li a {
   text-decoration: none;
-  color: #fff
+  color: #f3f7fb7a;
 }
 
-.menu ul li a:hover{
-  color: #888;
+.menu ul li a:hover {
+  color: #fff;
   transition: 1s;
 }
 
 /* end header here */
 
 .section-1 .background {
-  background: #247ba0;
+  background: #247BA0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 51px);
   position: absolute;
   z-index: -1;
   transform: skewY(-6deg);
@@ -71,7 +76,7 @@ header {
 }
 
 .section-1 .content {
-  min-height: 400px;
+  min-height: 350px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,37 +86,43 @@ header {
 }
 
 .section-1 .content .container {
-  width: 80%;
+  width: 65%;
   margin: auto;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 50px;
 }
 
 .title {
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 650;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding-top: 10px;
+  line-height: 20px;
 }
 
+/* 
 .desc {
   position: relative;
   top: -30px;
-  font-family: Cherry Swash;
-}
+} */
 
 /* end section 1 here */
 
 .section-2 {
   width: 100%;
   text-align: center;
-  color: #888;
-  cursor: pointer;
 }
 
 .section-2 .container {
-  max-width: 800px;
-  width: 90%;
+  /* max-width: 800px; */
+  width: 64%;
   margin: auto;
   text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #0b4786;
 }
 
 .skill {
@@ -121,10 +132,11 @@ header {
   display: inline-block;
   padding: 20px;
   padding-top: 40px;
-  margin: 5px;
+  margin: 12px 15px;
   border-radius: 5px;
-  box-shadow: 0 0.5rem 2.5rem rgba(60, 127, 239, 0.15);
+  box-shadow: 0 0.6rem 1.6rem rgba(60, 127, 239, 0.15);
   position: relative;
+  font-size:15px;
 }
 
 .section-2 .container .about p {
@@ -134,7 +146,7 @@ header {
 }
 
 .skill .icon {
-  width: 60px;
+  width: 50px;
   margin: auto;
 }
 
@@ -143,7 +155,7 @@ header {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   height: 6px;
   background-color: green;
@@ -236,17 +248,20 @@ header {
 
 .section-3 {
   width: 100%;
-  padding-bottom: 4em;
+  padding-top: 3em;
   text-align: center;
   position: relative;
+  font-size: 16px;
 }
 
 .section-3 .container {
-  width: 100%;
+  width: 64%;
   padding-top: 2em;
+  margin: auto;
+  position: relative;
 }
 
-.section-3 .container .background {
+.section-3 .background {
   background: #f3f3f3;
   width: 100%;
   height: 100%;
@@ -256,28 +271,37 @@ header {
 }
 
 .projects {
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 100%;
   position: relative;
 }
 
 .projects .project {
   display: inline-block;
-  margin: 6px;
+  margin: 20px 9px;
   white-space: inherit;
   max-width: 300px;
   max-height: 300px;
   vertical-align: middle;
   font-size: 15px;
-  font-family: Cherry Swash;
+  color:#888;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0 0 5px 5px;
+}
+
+strong{
+  position: relative;
+  top:10px;
+  font-weight: 700;
+  color: #000;
 }
 
 .portfolio {
-  width: 50%;
+  width: 100%;
   margin: auto;
   white-space: unset;
   font-size: 20px;
-  color: #888;
+  color: #0b4786;
+  font-family: sans-serif;
 }
 
 .projects .project img {
@@ -285,6 +309,7 @@ header {
   display: block;
   margin: auto;
   height: auto;
+  border-radius: 5px 5px 0 0;
 }
 
 .section-4 {
@@ -295,9 +320,17 @@ header {
 }
 
 .section-4 .container {
+  width: 64%;
+  margin: auto;
   padding: 10px;
-  font-family: Cherry Swash;
-  color: #555;
+  font-family: sans-serif;;
+  color: #0b4786;
+  padding-bottom: 40px;
+  padding-top:30px;
+}
+
+.section-4 .container .content h2{
+  font-weight: 800;
 }
 
 .section-4 .container ul {
@@ -313,22 +346,34 @@ header {
 }
 
 .section-4 .container ul li a {
-  color: #ddd;
+  color: #000;
+}
+
+
+
+
+/*  start media queries here for majke website responsive in the all verious device */
+
+
+@media screen and (max-width:1017px){
+  .section-3 .container{
+    width:80%;
+    background
+  }
 }
 
 .section-4 .container ul li a:hover {
-  color: #555;
-  transition: 2s;
+  color: #0b4786;
+  transition: 0.4s;
 }
 
 .fa-heart {
   color: red;
 }
 
-@media screen and (max-width: 872px) {
-
-  header{
-    width: 100%;
+@media screen and (max-width: 871px) {
+  .header header {
+    width: 90%;
     padding-bottom: 10px;
   }
 
@@ -336,115 +381,78 @@ header {
     width: 100%;
     display: none;
   }
-
-  .menu ul li{
+  .menu ul li {
     display: block;
     text-align: center;
     margin: 20px 0;
-    border-bottom:1px solid #888; 
+    border-bottom: 1px solid #888;
+    line-height: 20px;
   }
-
   .logo {
     font-size: 15px;
     width: 40%;
-    text-align: center;
+    text-align: left;
   }
-
   .hamburgur {
-    width: 55%;
+    width: 59%;
     display: inline-block;
     text-align: right;
     vertical-align: middle;
     cursor: pointer;
   }
-
   .active {
     display: block;
     transition: 1s;
   }
 
+  .section-1 .content .container,.section-2 .container,.section-3 .container,.section-4 .container{
+    width: 90%;
+  }
 }
 
-@media screen and (max-width:873px){
+@media screen and (max-width:729px){
   
-.skill:before,
-.skill:after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-}
-}
 
-@media screen and (max-width:802px){
-.projects{
-  max-width: 100%;
-}
-
-}
-
-@media screen and (max-width:644px){
-
-  .projects .project{
-    max-width: 250px;
-    max-height: 250px;
-  }
-
-}
-
-@media screen and (max-width: 460px) {
-  .section-1 .content .container h2 {
-    font-size: 30px;
-  }
-
-  .logo{
-    font-size: 15px;
-  }
-
-  .section-1 .content .container p{
-    margin-top:40px;
-  }
-
-
-  @media screen and (max-width:404px){ 
-   
-.logo{
-  font-size:12px;
-}
-
-  .section-1 .content .container h2 {
-    font-size: 29px;
-  } 
-
-  .skill svg{
-    width: 50px;
+  .section-3 .container{
+    width: 100%;
   }
 
   .portfolio{
-    width: 95%;
+    width: 80%;
   }
 
-  .skill {
-  width: 90px;
-  height: 85px;
-  font-size:14px;
+  .projects .project{
+    max-width: 260px;
+    height: 260px;
+   }
 }
 
-}
-
-
-@media screen and (max-width:337px){
-
-  .logo{
-    font-size: 10px;
-  }
-
-
-  .skill {
-    width: 55px;
-    height: 60px;
-    font-size:12px;
-  }
-
-}
+@media screen and (max-width:580px){
 
   
+  .projects .project{
+    max-width: 300px;
+    height: 300px;
+    margin: 10px;
+   }
+
+}
+
+
+
+@media screen and (max-width:508px){
+
+  p{
+    display: block;
+    text-align: center;
+  }
+ 
+.logo{
+  width: 65%;
+}
+
+.hamburgur{
+  width: 30%;
+  text-align: right;
+} 
+}
