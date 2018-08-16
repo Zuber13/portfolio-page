@@ -441,12 +441,6 @@ strong{
 
 
 @media screen and (max-width:508px){
-
-  p{
-    display: block;
-    text-align: center;
-  }
- 
 .logo{
   width: 65%;
 }
@@ -455,4 +449,34 @@ strong{
   width: 30%;
   text-align: right;
 } 
+}
+
+@media screen and (max-width:450px){
+
+  .skill{
+    width: 90px;
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-width:381px){
+
+  .skill{
+    width: 80px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width:357px){
+
+  .title {
+    font-size: 30px;
+    font-weight: 650;
+  }
+
+  .skill{
+    width: 130px;
+    height: 100px;
+  }
 }
