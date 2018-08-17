@@ -121,6 +121,8 @@ p {
 .section-2 {
   width: 100%;
   text-align: center;
+  padding-bottom: 5em;
+  line-height: 20px;
 }
 
 .section-2 .container {
@@ -140,7 +142,7 @@ p {
   display: inline-block;
   padding: 20px;
   padding-top: 40px;
-  margin: 12px 15px;
+  margin: 15px;
   border-radius: 5px;
   box-shadow: 0 0.6rem 1.6rem rgba(60, 127, 239, 0.15);
   position: relative;
@@ -266,6 +268,7 @@ p {
 .section-3 .container {
   width: 64%;
   padding-top: 2em;
+  padding-bottom: 2em;
   margin: auto;
   position: relative;
 }
@@ -349,14 +352,77 @@ strong {
   padding: 0;
 }
 
+.social-media {
+  padding-bottom: 20px;
+}
+
 .section-4 .container ul li {
   display: inline-block;
-  padding: 10px;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 25px;
 }
 
 .section-4 .container ul li a {
-  color: #000;
+  color: #0b4786;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  background: #ddd;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s;
+}
+
+.section-4 .container ul li a .fa {
+  position: relative;
+  color: #fff;
+  transition: 1.2s;
+  z-index: 3;
+}
+
+.section-4 .container ul li a:hover .fa {
+  transform: rotateX(360deg);
+}
+
+.section-4 .container ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  transition: 1s ease;
+  z-index: 2;
+}
+
+.section-4 .container ul li a:hover:before {
+  top: 0;
+}
+
+.email {
+  font-weight: 700;
+  color: #784594;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-4 .container ul li:nth-child(1) a:hover:before {
+  background-color: #34465d;
+}
+
+.section-4 .container ul li:nth-child(2) a:hover:before {
+  background-color: #55acee;
+}
+
+.section-4 .container ul li:nth-child(3) a:hover:before {
+  background-color: #006400;
+}
+
+.section-4 .container ul li:nth-child(4) a:hover:before {
+  background-color: #800080;
 }
 
 /*  start media queries here for majke website responsive in the all verious device */
