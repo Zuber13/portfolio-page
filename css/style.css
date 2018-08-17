@@ -17,8 +17,10 @@ p {
 .header {
   width: 100%;
   background: rgb(245, 194, 6);
-  color: #f3f7fb7a;
   line-height: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header header {
@@ -32,19 +34,20 @@ p {
   display: inline-block;
   font-size: 18px;
   font: 900;
-  color: #f3f7fb7a;
+  color: #fff;
 }
 
 .menu {
   width: 60%;
   display: inline-block;
   font-size: 16px;
+  color: #fff;
 }
 
 .hamburgur {
   font-size: 30px;
   display: none;
-  color: #f3f7fb7a;
+  color: #fff;
 }
 
 .menu ul {
@@ -61,21 +64,26 @@ p {
 
 .menu ul li a {
   text-decoration: none;
-  color: #f3f7fb7a;
+  color: #fff;
 }
 
 .menu ul li a:hover {
-  color: #fff;
+  color: #0000;
   transition: 1s;
 }
 
 /* end header here */
 
+.section-1 {
+  background-attachment: fixed;
+}
+
 .section-1 .background {
-  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdff4c62302fd44491d4850202323d11&auto=format&fit=crop&w=1050&q=80");
+  background-image: url('../images/background-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  background-attachment: fixed;
   height: calc(100% - 51px);
   position: absolute;
   transform: skewY(-6deg);
