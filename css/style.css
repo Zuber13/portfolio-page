@@ -10,18 +10,15 @@ body {
   vertical-align: middle;
 }
 
-p{
+p {
   line-height: 20px;
 }
-
-
 
 .header {
   width: 100%;
   background: #247BA0;
   color: #f3f7fb7a;
   line-height: 10px;
-
 }
 
 .header header {
@@ -145,7 +142,7 @@ p{
   border-radius: 5px;
   box-shadow: 0 0.6rem 1.6rem rgba(60, 127, 239, 0.15);
   position: relative;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .section-2 .container .about p {
@@ -166,7 +163,7 @@ p{
   right: 0;
   bottom: -1px;
   left: 0;
-  height: 6px;
+  height: 8px;
   background-color: green;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -292,14 +289,14 @@ p{
   max-height: 300px;
   vertical-align: middle;
   font-size: 15px;
-  color:#888;
+  color: #888;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0 0 5px 5px;
 }
 
-strong{
+strong {
   position: relative;
-  top:10px;
+  top: 10px;
   font-weight: 700;
   color: #000;
 }
@@ -309,7 +306,7 @@ strong{
   margin: auto;
   white-space: unset;
   font-size: 20px;
-  color: #0b4786;
+  color: #555;
   font-family: sans-serif;
 }
 
@@ -318,7 +315,7 @@ strong{
   display: block;
   margin: auto;
   height: auto;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
 
 .section-4 {
@@ -332,13 +329,14 @@ strong{
   width: 64%;
   margin: auto;
   padding: 10px;
-  font-family: sans-serif;;
+  font-family: sans-serif;
+  ;
   color: #0b4786;
   padding-bottom: 40px;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
-.section-4 .container .content h2{
+.section-4 .container .content h2 {
   font-weight: 800;
 }
 
@@ -358,15 +356,11 @@ strong{
   color: #000;
 }
 
-
-
-
 /*  start media queries here for majke website responsive in the all verious device */
 
-
-@media screen and (max-width:1017px){
-  .section-3 .container{
-    width:80%;
+@media screen and (max-width:1017px) {
+  .section-3 .container {
+    width: 80%;
     background
   }
 }
@@ -385,7 +379,6 @@ strong{
     width: 90%;
     padding-bottom: 10px;
   }
-
   .menu {
     width: 100%;
     display: none;
@@ -413,78 +406,65 @@ strong{
     display: block;
     transition: 1s;
   }
-
-  .section-1 .content .container,.section-2 .container,.section-3 .container,.section-4 .container{
+  .section-1 .content .container,
+  .section-2 .container,
+  .section-3 .container,
+  .section-4 .container {
     width: 90%;
   }
 }
 
-@media screen and (max-width:729px){
-  
-
-  .section-3 .container{
+@media screen and (max-width:729px) {
+  .section-3 .container {
     width: 100%;
   }
-
-  .portfolio{
+  .portfolio {
     width: 80%;
   }
-
-  .projects .project{
+  .projects .project {
     max-width: 260px;
     height: 260px;
-   }
+  }
 }
 
-@media screen and (max-width:580px){
-
-  
-  .projects .project{
+@media screen and (max-width:580px) {
+  .projects .project {
     max-width: 300px;
     height: 300px;
     margin: 10px;
-   }
-
+  }
 }
 
-
-
-@media screen and (max-width:508px){
-.logo{
-  width: 65%;
+@media screen and (max-width:508px) {
+  .logo {
+    width: 65%;
+  }
+  .hamburgur {
+    width: 30%;
+    text-align: right;
+  }
 }
 
-.hamburgur{
-  width: 30%;
-  text-align: right;
-} 
-}
-
-@media screen and (max-width:450px){
-
-  .skill{
+@media screen and (max-width:450px) {
+  .skill {
     width: 90px;
     height: 100px;
   }
-
 }
 
-@media screen and (max-width:381px){
-
-  .skill{
+@media screen and (max-width:381px) {
+  .skill {
     width: 80px;
     height: 100px;
   }
 }
 
-@media screen and (max-width:357px){
-
+@media screen and (max-width:357px) {
   .title {
     font-size: 30px;
     font-weight: 650;
   }
-
-  .skill{
+  .skill {
     width: 120px;
     height: 100px;
   }
