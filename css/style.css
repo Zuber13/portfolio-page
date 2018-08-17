@@ -160,13 +160,14 @@ p {
 .skill:after {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: -1px;
-  left: 0;
-  height: 8px;
-  background-color: green;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  right: -1px;
+  bottom: -0.5px;
+  left: -1px;
+  height: 9px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .skill:after {
@@ -182,8 +183,8 @@ p {
 }
 
 .skill:hover:after {
-  left: 0;
-  right: 0;
+  left: -1px;
+  right: -1px;
 }
 
 .skill.html:before {
